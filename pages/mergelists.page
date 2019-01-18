@@ -1,0 +1,8 @@
+<apex:page standardController="Account" >
+  <apex:repeat var="a" value="{!Account}">
+    <apex:outputText value="{!a.Name}"/>
+    <apex:repeat var="c" value="{!Account}">
+        <apex:outputText value="{!c.Name}"/>
+    </apex:repeat>
+</apex:repeat>
+</apex:page>

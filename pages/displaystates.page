@@ -1,0 +1,9 @@
+<apex:page standardcontroller="Account">
+<apex:form >
+
+<apex:inputField value="{!Account.Billingcountrycode}"/>
+<apex:inputField value="{!Account.Billingstatecode}">
+</apex:inputField>
+
+</apex:form>
+</apex:page>

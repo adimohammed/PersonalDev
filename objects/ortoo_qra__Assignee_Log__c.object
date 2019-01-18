@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Assignee (user/queue) log</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>ortoo_qra__Active_Assignments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ortoo_qra__Active_Case_Assignments__c  +  ortoo_qra__Active_Lead_Assignments__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active Assignments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Active_Case_Assignments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Active case assignments</description>
+        <externalId>false</externalId>
+        <label>Active Case Assignments</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Active_Lead_Assignments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Active lead assignments</description>
+        <externalId>false</externalId>
+        <label>Active Lead Assignments</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Assignment_Group_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Assignment group member</description>
+        <externalId>false</externalId>
+        <label>Assignment Group Member</label>
+        <referenceTo>ortoo_qra__Assignment_Group_Member__c</referenceTo>
+        <relationshipLabel>Assignee Log</relationshipLabel>
+        <relationshipName>Assignee_Log</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Case_Quota_Assigned__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Case quota assigned this quota period</description>
+        <externalId>false</externalId>
+        <label>Case Quota Assigned</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Case_Recalculate_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Case recalculate required</description>
+        <externalId>false</externalId>
+        <label>Case Recalculate Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Last_Assignment_Seq__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last assignment sequence number</description>
+        <externalId>false</externalId>
+        <label>Last Assignment Seq</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Last_Assignment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last assignment date</description>
+        <externalId>false</externalId>
+        <label>Last Assignment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Lead_Quota_Assigned__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lead quota assigned this quota period</description>
+        <externalId>false</externalId>
+        <label>Lead Quota Assigned</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Lead_Recalculate_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Lead recalculate required</description>
+        <externalId>false</externalId>
+        <label>Lead Recalculate Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__User_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>User id</description>
+        <externalId>false</externalId>
+        <label>User Id</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Assignee_Log</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Assignee Log</label>
+    <nameField>
+        <label>Assignee Id</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Assignee Log</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

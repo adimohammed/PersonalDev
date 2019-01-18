@@ -1,0 +1,16 @@
+<apex:page standardController="Account" tabStyle="Case">
+    <apex:form > 
+        <apex:pageBlock title="Hello {!$User.FirstName}!">
+            You are viewing the {!account.name} account. <p/>
+             Change Account Name: <p/> 
+          Name       <apex:inputField value="{!account.name}"/> <p/>
+         Type        <apex:inputField value="{!account.Type}"/> <p/>
+            Active            <apex:inputField value="{!account.Active__c}"/> <p/>
+
+                       <apex:commandButton action="{!Edit}" value="Edit"/>
+                                              <apex:commandButton action="{!Save}" value="Save"/> 
+ 
+
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

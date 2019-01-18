@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;marquee direction=&quot;up&quot;&gt;&lt;font color=&quot;purple&quot; size=&quot;5&quot; face=&quot;&apos;Times New Roman&apos;, Times, serif&quot;&gt;&lt;b&gt;&lt;i&gt; &quot;Lets Get Started&quot; &lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/marquee&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

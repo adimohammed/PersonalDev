@@ -1,0 +1,31 @@
+<apex:page id="myPage">
+       
+ <apex:form id="myform" >
+
+
+<apex:PageBlock title="TFN Provisioning for Listing :" />
+<apex:PageBlock >
+<apex:PageBlockSection columns="1" >
+<apex:outputPanel style="vertical-align:top" >
+  <table border="0" class="list" width="100%" cellpadding="0" cellspacing="0" id="aheadertable" >
+                <tr >
+                <!--    <th width="2%" style="font-weight:bold" rowspan='2'><b>Select All</b></th> -->
+                  <td width="2%"  style="font-weight:bold;text-align:center;vertical-align:bottom" rowspan='2'><b>
+                    <apex:inputCheckbox id="SelectAll"   styleclass="SelectAll" onclick="pressme()"/></b></td>
+                    </tr>
+                     </table>
+                    </apex:outputPanel>
+                    </apex:PageBlockSection>
+</apex:PageBlock>
+
+</apex:form>
+<script>
+function pressme()
+ {
+   alert('Thank you Every One');
+    
+            
+     
+ }
+ </script>
+</apex:page>

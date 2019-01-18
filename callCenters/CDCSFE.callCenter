@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <displayName>CTI Data Connector - Call Center Adapter</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>Integration in salesforce call center adapter for CTI Data Connector</value>
+        </items>
+        <items>
+            <label>CTI Connector ProgId</label>
+            <name>reqProgId</name>
+            <value>CDCSFEAdapter.CDCSFEAdapter.2</value>
+        </items>
+        <items>
+            <label>Version</label>
+            <name>reqVersion</name>
+            <value>3.0</value>
+        </items>
+        <items>
+            <label>Config Version</label>
+            <name>reqConfVersion</name>
+            <value>3.0.3</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Outside Prefix</label>
+            <name>reqOutsidePrefix</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>International Prefix</label>
+            <name>reqInternationalPrefix</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Country Code</label>
+            <name>reqCountryCode</name>
+            <value xsi:nil="true"/>
+        </items>
+        <label>Dialing Options</label>
+        <name>reqDialingOptions</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Call Wrap Up Enabled (Y/N)</label>
+            <name>reqWrapupEnable</name>
+            <value>N</value>
+        </items>
+        <items>
+            <label>Label 1</label>
+            <name>reqWrapupLabel1</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 1</label>
+            <name>reqWrapupValue1</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 2</label>
+            <name>reqWrapupLabel2</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 2</label>
+            <name>reqWrapupValue2</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 3</label>
+            <name>reqWrapupLabel3</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 3</label>
+            <name>reqWrapupValue3</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 4</label>
+            <name>reqWrapupLabel4</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 4</label>
+            <name>reqWrapupValue4</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 5</label>
+            <name>reqWrapupLabel5</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 5</label>
+            <name>reqWrapupValue5</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 6</label>
+            <name>reqWrapupLabel6</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 6</label>
+            <name>reqWrapupValue6</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 7</label>
+            <name>reqWrapupLabel7</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 7</label>
+            <name>reqWrapupValue7</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 8</label>
+            <name>reqWrapupLabel8</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 8</label>
+            <name>reqWrapupValue8</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 9</label>
+            <name>reqWrapupLabel9</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 9</label>
+            <name>reqWrapupValue9</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Label 10</label>
+            <name>reqWrapupLabel10</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Value for report 10</label>
+            <name>reqWrapupValue10</name>
+            <value xsi:nil="true"/>
+        </items>
+        <label>Call Wrap Up</label>
+        <name>reqWrapup</name>
+    </sections>
+    <version>3</version>
+</CallCenter>

@@ -1,0 +1,9 @@
+<apex:page standardController="Contact">
+<apex:Form >
+<apex:pageBlock >Create New Contact</apex:pageBlock>
+<p>First name: <apex:inputField value="{!contact.FirstName}"/></p>
+<p>Last  name: <apex:inputField value="{!contact.LastName}"/></p>
+<p>Account Name: <apex:inputField value="{!contact.accountid}"/></p>
+<apex:commandButton action="{!save}" value="Save"/>
+</apex:Form>
+</apex:page>

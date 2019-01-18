@@ -1,0 +1,10 @@
+<messaging:emailTemplate recipientType="User"
+    relatedToType="Account"
+    subject="Case report ">
+  
+
+
+    <messaging:htmlEmailBody >
+       Account Number : {!relatedTo.Name}
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

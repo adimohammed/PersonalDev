@@ -1,0 +1,32 @@
+<apex:page standardController="Account" rendered="{!$ObjectType.Account.accessible}"
+action="{!if($Profile.Name !='System Administrator', null, urlFor($Action.Account.Tab,
+$ObjectType.Account, null, true))}" recordSetVar="accounts" tabStyle="account" sidebar="false">
+<apex:pageBlock title="Viewing Facilities" >
+<!-- Creates dynamic list views. Uses list views from standard setup --> 
+<apex:form id="theForm">
+<apex:panelGrid columns="2">
+<apex:outputLabel value="View:"/>
+<apex:selectList value="{!filterId}" size="1">
+<apex:actionSupport event="onchange" rerender="list"/>
+<apex:selectOptions value="{!listviewoptions}"/>
+</apex:selectList>
+</apex:panelGrid>
+<!-- Outputs page components. --> 
+<apex:pageBlockSection >
+<apex:dataList var="a" value="{!accounts}" rows="10" type="circle" id="list">
+<apex:pageBlockSectionItem ><a href="FacilityMainTabbed?id={!a.Id}">{!a.name}</a>
+</apex:pageBlockSectionItem>
+</apex:dataList>
+</apex:pageBlockSection>
+<!-- Navigation buttons at bottom of page -->
+<!-- <apex:panelGrid columns="2"> -->
+<apex:commandLink action="{!previous}">Previous</apex:commandlink>
+<apex:commandButton action="{!next}" value="Next"/>
+<!-- </apex:panelGrid> -->
+</apex:form>
+</apex:pageBlock>
+
+<apex:pageBlock rendered="NOT({!$ObjectType.Account.accessible})">
+<p>Sorry, but it does not look like you have access to this page. Please contact your Administrator for more information.</p>
+</apex:pageBlock>
+</apex:page>

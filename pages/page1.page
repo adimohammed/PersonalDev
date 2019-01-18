@@ -1,0 +1,4 @@
+<apex:page standardController="Position__c" >
+  
+  {!Position__c.Name}
+</apex:page>

@@ -1,0 +1,3 @@
+<apex:page title="Assignment Rules">
+	<apex:sectionHeader title="Assignment rules have been merged into Assignment Groups. This page will be removed in a future release." />
+</apex:page>

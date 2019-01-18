@@ -1,0 +1,13 @@
+<apex:page controller="config_mylist">
+<apex:form >
+.
+.
+.
+<apex:selectCheckboxes id="mylist_list" required="false" value="{!MYLIST}" >
+     <apex:selectOptions value="{!MYLIST_OPTIONS}" />
+</apex:selectCheckboxes>
+.
+.
+.
+</apex:form>
+</apex:page>

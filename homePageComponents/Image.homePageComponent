@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;p&gt;An image:&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot; width=&quot;32&quot; height=&quot;32&quot;&gt;&lt;/p&gt;&lt;p&gt;A moving image:&lt;img src=&quot;hackanm.gif&quot; alt=&quot;Computer man&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/p&gt;&lt;p&gt;Note that the syntax of inserting a moving image is no different from a non-moving image.&lt;/p&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

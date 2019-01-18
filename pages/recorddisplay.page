@@ -1,0 +1,6 @@
+<apex:page >
+<c:sfdc record="Account">
+
+</c:sfdc>
+
+  </apex:page>

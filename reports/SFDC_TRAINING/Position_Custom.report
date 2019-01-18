@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Position__c$Name</field>
+    </columns>
+    <columns>
+        <field>Position__c.junctions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Position__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Position__c$Hire_By__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Position__c$MIn_Pay__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>15000</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Position Custom</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Position_Custom_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Position__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

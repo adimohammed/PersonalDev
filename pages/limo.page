@@ -1,0 +1,26 @@
+<apex:page showHeader="false">
+<apex:stylesheet value="{!URLFOR($Resource.limo)}"/>
+<style>
+ 
+        h1.quintessential{
+            font-family: 'Quintessential';
+        }
+        h1{
+            font-size: 50px;
+        }
+        h.quintessential{
+            font-family: 'Quintessential';
+        } 
+        h{
+             font-size: 30px;   
+        }
+    </style>
+<p> <u>
+    <h1 class="quintessential">*********LIMO SERVICES*********</h1><br/>
+</u></p>
+
+ <p> <h class="quintessential"> ****FOR AIRPORT PICK UP AND DROP****</h><br/></p>
+ <p> <h class="quintessential"> *********For Point To Point*********</h><br/></p>
+ 
+ <p><b> <h class="quintessential"> CALL OR TEXT MERAJ AFZAL : 630-999-9786</h></b></p>
+</apex:page>

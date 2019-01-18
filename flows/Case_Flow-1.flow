@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>GC1111</name>
+        <choiceText>GC1111</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>GC1111</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>GC2222</name>
+        <choiceText>GC222</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>GC222</stringValue>
+        </value>
+    </choices>
+    <label>Case Flow</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Web_Information</name>
+        <label>Web Information</label>
+        <locationX>243</locationX>
+        <locationY>118</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Product</name>
+            <choiceReferences>GC1111</choiceReferences>
+            <choiceReferences>GC2222</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Product</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Web_Information</startElementReference>
+    <textTemplates>
+        <name>Picklist</name>
+        <text>{!Product}</text>
+    </textTemplates>
+</Flow>

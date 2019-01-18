@@ -1,0 +1,10 @@
+<aura:component controller="BMIController">
+    <aura:attribute name="Height" type="Double" />
+    <aura:attribute name="Weight" type="Double"/>
+    <aura:attribute name="BMI" type="Double"/>
+    
+    <ui:inputNumber value="{!v.Height}" label="Height"/>
+    <ui:inputNumber value="{!v.Weight}" label="Weight"/>
+    <ui:button aura:id="button" class="button" label="Calculate BMI" press="{!c.getBMIS}"/>
+    BMI: - {!v.BMI}
+</aura:component>

@@ -1,0 +1,12 @@
+<apex:page standardcontroller="Application__c" extensions="tree" tabStyle="Grouping__c">
+<apex:form >
+<apex:pageBlock title=" For : {!application}">
+  
+       <apex:commandButton value="+" action="{!Expand}"/>
+               
+     
+ <b> <apex:outputField style="font-weight:bold" value="{!Application__c.Application_ID__c}"/>------  <apex:outputField style="font-weight:bold" value="{!Application__c.Name}"/></b>
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page standardController="Account" >
+<apex:form >
+
+<apex:outputText value="{!account.Name}"  />
+<apex:outputtext value="{!account.Type}"/>
+  </apex:form>
+</apex:page>

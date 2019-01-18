@@ -1,0 +1,50 @@
+<apex:page sidebar="false" showHeader="false" >
+
+
+<apex:form >
+<apex:pageblock >
+     <apex:pageBlockButtons location="top">
+    
+    <apex:commandButton onclick="pressme()" value="Please Click Me "/>
+     <apex:commandButton value="Pretty Woman" action="https://www.youtube.com/watch?v=nhUziz85xo0"/>
+      <apex:commandButton value="Now You Are Mine" action="http://vimeo.com/81161360"/>
+     </apex:pageBlockButtons>
+</apex:pageblock>
+
+<html>
+
+
+<font size="10" face="Verdana" color="DeepPink">
+<marquee direction = "left"> <h1><i> I LOVE U SAMAN.</i></h1></marquee>
+</font>
+<font size="10" face="Verdana" color="red">
+<marquee direction = "down"> <h1><i> ~~***Adil--SAMAN***~~ </i></h1></marquee>
+</font>
+
+<font size="10" face="Verdana" color="Blue">
+<marquee direction = "left"> <h1><i> FOREVER AND EVER AND EVER</i></h1></marquee>
+</font>
+</html>
+<p>
+
+<apex:image url="{!$Resource.TestImage}" width="200" /> 
+<apex:image url="{!$Resource.heartbeat}" width="250" />
+<apex:image url="{!$Resource.AdilImage}" height="350" />
+</p>
+
+
+<script>
+
+
+ function pressme()
+ {
+   alert('I LOVE YOU ');
+     alert('PLEASE BE MINE ');
+     alert('FOREVER');
+    
+            
+     
+ }
+</script>
+</apex:form>
+ </apex:page>

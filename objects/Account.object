@@ -1,0 +1,1701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>NPSP_Household_Account</fullName>
+        <fields>Name</fields>
+        <fields>npo02__TotalOppAmount__c</fields>
+        <label>NPSP Household Account</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>NPSP_Organization_Account</fullName>
+        <fields>Name</fields>
+        <fields>npo02__NumberOfClosedOpps__c</fields>
+        <fields>npo02__TotalOppAmount__c</fields>
+        <fields>Website</fields>
+        <label>NPSP Organization Account</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramLevelName</fullName>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramName</fullName>
+    </fields>
+    <fields>
+        <fullName>CustomerPriority__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HasActivityHistory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HasActivityHistory</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hello__c</fullName>
+        <externalId>false</externalId>
+        <label>Hello</label>
+        <length>244</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ISO_CODE__c</fullName>
+        <externalId>false</externalId>
+        <label>ISO CODE</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsCustomerPortal</fullName>
+    </fields>
+    <fields>
+        <fullName>IsPartner</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberofLocations__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Locations</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SLAExpirationDate__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SLASerialNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA Serial Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SLA__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gold</fullName>
+                    <default>false</default>
+                    <label>Gold</label>
+                </value>
+                <value>
+                    <fullName>Silver</fullName>
+                    <default>false</default>
+                    <label>Silver</label>
+                </value>
+                <value>
+                    <fullName>Platinum</fullName>
+                    <default>false</default>
+                    <label>Platinum</label>
+                </value>
+                <value>
+                    <fullName>Bronze</fullName>
+                    <default>false</default>
+                    <label>Bronze</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UpsellOpportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Upsell Opportunity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Maybe</fullName>
+                    <default>false</default>
+                    <label>Maybe</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>npe01__One2OneContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The primary contact for the Account, or the One2One contact for a One2One account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The primary contact for the Account, or the One2One contact for a One2One account.</inlineHelpText>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Account</relationshipLabel>
+        <relationshipName>Organizations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>npe01__SYSTEMIsIndividual__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hidden system field: do not change.  Updated by automatic processes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether or not this Account is special for Contacts (Household, One-to-One, Individual) vs a normal Account.</inlineHelpText>
+        <label>_SYSTEM: IsIndividual</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>npe01__SYSTEM_AccountType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden system field: do not change.  Updated by automatic processes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates which Account Model this account is for: Household Account, One-to-One, or Individual (bucket).</inlineHelpText>
+        <label>_SYSTEM: AccountType</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__AverageAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>System field: do not change. Updated by automatic processes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Average won Opportunity amount related to this Account.  Updated automatically.</inlineHelpText>
+        <label>Average Gift</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__Best_Gift_Year_Total__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The sum of won Opportunity amounts in the Best Gift Year for this Account.</inlineHelpText>
+        <label>Best Gift Year Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__Best_Gift_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The year in which the largest total amount of won Opportunities related to this Account occurred.  See also Best Gift Year Total.</inlineHelpText>
+        <label>Best Gift Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__FirstCloseDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The earliest won Opportunity (by Close Date) with amount greater than zero related to this Account.</inlineHelpText>
+        <label>First Gift Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>npo02__Formal_Greeting__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically.</inlineHelpText>
+        <label>Formal Greeting</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>npo02__HouseholdPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Household Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>npo02__Informal_Greeting__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>For Household Accounts, uses fields of non-excluded, ordered related Contacts. Generated automatically.</inlineHelpText>
+        <label>Informal Greeting</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>npo02__LargestAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The largest amount of a won Opportunity related to this Account.</inlineHelpText>
+        <label>Largest Gift</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__LastCloseDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The most recent Close Date of a won Opportunity related to this Account with amount greater than zero.</inlineHelpText>
+        <label>Last Gift Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>npo02__LastMembershipAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of the most recent (by Close Date) won Membership Opportunity (by Record Type) for this Account.</inlineHelpText>
+        <label>Last Membership Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__LastMembershipDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The most recent Close Date of a won Membership Opportunity (by Record Type) related to this Account.</inlineHelpText>
+        <label>Last Membership Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>npo02__LastMembershipLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Membership level from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.&quot;</inlineHelpText>
+        <label>Last Membership Level</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__LastMembershipOrigin__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Membership &quot;origin&quot; (new, renew...) from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.</inlineHelpText>
+        <label>Last Membership Origin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__LastOppAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of the most recent won Opportunity (by Close Date) with amount greater than zero related to this Account.</inlineHelpText>
+        <label>Last Gift Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__MembershipEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Membership end date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.</inlineHelpText>
+        <label>Membership End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>npo02__MembershipJoinDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Membership start date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.</inlineHelpText>
+        <label>Membership Join Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>npo02__NumberOfClosedOpps__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of won Opportunities  related to this Account.</inlineHelpText>
+        <label>Total Number of Gifts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__NumberOfMembershipOpps__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of won Membership Opportunities (Record Type) related to this Account.</inlineHelpText>
+        <label>Number of Memberships</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__OppAmount2YearsAgo__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Opportunities related to this Account, closed within the year or fiscal year preceding last year (see Household Settings).</inlineHelpText>
+        <label>Total Gifts Two Years Ago</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__OppAmountLastNDays__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings.</inlineHelpText>
+        <label>Total Gifts Last N Days</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__OppAmountLastYear__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Opportunities related to this Account, closed in the current year or fiscal year.</inlineHelpText>
+        <label>Total Gifts Last Year</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__OppAmountThisYear__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Opportunities related to this Account, closed in the current year or fiscal year.</inlineHelpText>
+        <label>Total Gifts This Year</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__OppsClosed2YearsAgo__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of won Opportunities with amount greater than zero related to this Account, closed within the year or fiscal year preceding last year.</inlineHelpText>
+        <label>Number of Gifts Two Years Ago</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__OppsClosedLastNDays__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings.</inlineHelpText>
+        <label>Number of Gifts Last N Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__OppsClosedLastYear__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of won Opportunities with amount greater than zero related to this Account, closed in the previous year or fiscal year (see Household Settings).</inlineHelpText>
+        <label>Number of Gifts Last Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__OppsClosedThisYear__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types and FY/CY in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of won Opportunities with amount greater than zero related to this Account, closed in the current year or fiscal year (see Household Settings).</inlineHelpText>
+        <label>Number of Gifts This Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>npo02__SYSTEM_CUSTOM_NAMING__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>For Household Accounts, specifies which name related fields should not be automatically populated by the Householding code.</inlineHelpText>
+        <label>_SYSTEM: CUSTOM NAMING</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Name</fullName>
+                    <default>false</default>
+                    <label>Name</label>
+                </value>
+                <value>
+                    <fullName>Formal_Greeting__c</fullName>
+                    <default>false</default>
+                    <label>Formal_Greeting__c</label>
+                </value>
+                <value>
+                    <fullName>Informal_Greeting__c</fullName>
+                    <default>false</default>
+                    <label>Informal_Greeting__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>npo02__SmallestAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The smallest non-zero amount of a won Opportunity related to this Account.</inlineHelpText>
+        <label>Smallest Gift</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__TotalMembershipOppAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of won Membership Opportunities (Record Type) related to this Account.</inlineHelpText>
+        <label>Total Membership Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>npo02__TotalOppAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Do not manually update. Updated by automatic processes. See excluded Record Types in Household Settings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The sum of amounts of all won Opportunities related to this Account.</inlineHelpText>
+        <label>Total Gifts</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Assigned_From_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Assigned From Group</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Assigned_From_OwnerUser__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Assigned From User (Deprecated)</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Assigned_From_Queue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Assigned From Owner</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Q_assign_Last_Assigned_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Q-assign Last Assigned Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_qra__Reviewed_Days__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate - ortoo_qra__Q_assign_Last_Assigned_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q-assign Reviewed Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Household_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>npo02__Formal_Greeting__c</columns>
+        <columns>npo02__Informal_Greeting__c</columns>
+        <columns>npo02__TotalOppAmount__c</columns>
+        <columns>npo02__AverageAmount__c</columns>
+        <columns>npo02__Best_Gift_Year__c</columns>
+        <columns>npo02__HouseholdPhone__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.HH_Account</value>
+        </filters>
+        <label>Household Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>NewLastWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>New Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>PlatinumandGoldSLACustomers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>Platinum and Gold SLA Customers</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>HH_Account</fullName>
+        <active>true</active>
+        <description>An Account representing a Household containing one or more individuals</description>
+        <label>Household Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Channel Partner %2F Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UpsellOpportunity__c</picklist>
+            <values>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__SYSTEM_CUSTOM_NAMING__c</picklist>
+            <values>
+                <fullName>Formal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Informal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Organization</fullName>
+        <active>true</active>
+        <description>An Account representing an organization</description>
+        <label>Organization</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Channel Partner %2F Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>UpsellOpportunity__c</picklist>
+            <values>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__SYSTEM_CUSTOM_NAMING__c</picklist>
+            <values>
+                <fullName>Formal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Informal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>npo02__HouseholdPhone__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Billing</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Billing</masterLabel>
+        <openType>newWindow</openType>
+        <page>shamli</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Compose_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Compose Email</masterLabel>
+        <openType>newWindow</openType>
+        <page>pramodemail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>LINKEDIN</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>LINKEDIN</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.linkedin.com/csearch/results?type=companies&amp;keywords= {! Account.Name } &amp;&amp; {!Contact.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass update</masterLabel>
+        <openType>sidebar</openType>
+        <page>listview</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>VFPAGE</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>VFPAGE</masterLabel>
+        <openType>newWindow</openType>
+        <page>trainingpage</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>ortoo_qra__Take_Ownership</fullName>
+        <availability>online</availability>
+        <description>Q-assign: Gives ownership to the user pressing the button and updates Q-assign stats.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var userId = &quot;{!$User.Id}&quot;;
+var objectIdArray = {!GETRECORDIDS($ObjectType.Account)};
+
+if ( objectIdArray.length &gt; 0 )
+{
+var result = sforce.apex.execute(&quot;ortoo_qra/AssignmentController&quot;,
+&quot;takeOwnership&quot;, {userId: userId, objectIdArray: objectIdArray } );
+if( result == &apos;&apos; )
+{
+window.alert( &apos;Ownership taken successfully.&apos; );
+}
+else
+{
+window.alert( &apos;Failed to take ownership. Details: &apos; + result );
+}
+document.location.reload( true );
+}
+else
+{
+window.alert( &apos;Please select at least one record.&apos; );
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ortoo_qra__Take_Ownership_Detail</fullName>
+        <availability>online</availability>
+        <description>Q-assign: Gives ownership to the user pressing the button and updates Q-assign stats.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var userId = &quot;{!$User.Id}&quot;;
+var objectIdArray = [ &quot;{!Account.Id}&quot; ];
+
+if ( objectIdArray.length &gt; 0 )
+{
+var result = sforce.apex.execute(&quot;ortoo_qra/AssignmentController&quot;,
+&quot;takeOwnership&quot;, {userId: userId, objectIdArray: objectIdArray } );
+if( result == &apos;&apos; )
+{
+window.alert( &apos;Ownership taken successfully.&apos; );
+}
+else
+{
+window.alert( &apos;Failed to take ownership. Details: &apos; + result );
+}
+document.location.reload( true );
+}
+else
+{
+window.alert( &apos;Please select at least one record.&apos; );
+}</url>
+    </webLinks>
+</CustomObject>

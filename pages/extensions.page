@@ -1,0 +1,6 @@
+<apex:page standardController="Account" extensions="display"  >
+  <apex:form >
+  {!greeting}<p/>
+ Name: <apex:inputField value="{!Account.Name}"/>
+  </apex:form>
+</apex:page>

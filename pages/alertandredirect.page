@@ -1,0 +1,44 @@
+<apex:page showHeader="true" standardController="Account" extensions="myControllerAlert">
+ 
+ 
+ <apex:form >
+     <!-- other stuff -->
+     <apex:actionFunction name="doCallout" action="{!callout}" rerender="none">
+    <apex:param name="latitude" value="{!latitude}" id="loclat"/>
+    </apex:actionfunction>
+    
+    <!-- other stuff -->    
+  </apex:form>
+ 
+ 
+ <script type="text/javascript">
+ window.onload=function()
+    {    
+        initialize();
+       
+        
+    }
+    function initialize() {     
+    var lat ;
+    var lon;          
+    // Call getCurrentPosition method if geolocation object exists
+    if (navigator.geolocation) {                               
+        navigator.geolocation.getCurrentPosition(onSuccess,onError,{enableHighAccuracy:false,timeout:5000});                
+    } 
+     doCallout();
+}   
+//success callback
+function onSuccess(position){                    
+    lat= position.coords.latitude;
+    lon = position.coords.longitude; 
+   alert('lat' + lat +'lon' + lon);
+   document.getElementById("loclat").value=lat;
+   // document.getElementById("loclong").value=lon;
+   // alert('lat' + lat +'lon' + lon);
+}
+//error callback
+function onError(err){
+    alert(err.message);
+}
+ </script>
+</apex:page>

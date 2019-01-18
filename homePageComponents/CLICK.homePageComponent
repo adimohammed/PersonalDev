@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;p&gt;&lt;i&gt;&lt;font face=&quot;Verdana&quot; color=&quot;Blue&quot; size=&quot;10&quot;&gt;&lt;a href=&quot;/apex/page4u&quot;&gt;ASHI PLEASE CLICK ME&amp;nbsp; MOTUUU&lt;/a&gt; &lt;/font&gt;&lt;/i&gt;&lt;/p&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

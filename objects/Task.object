@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>IsReminderSet</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>ortoo_qra__Take_Ownership</fullName>
+        <availability>online</availability>
+        <description>Q-assign: Gives ownership to the user pressing the button and updates Q-assign stats.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var userId = &quot;{!$User.Id}&quot;;
+var objectIdArray = {!GETRECORDIDS($ObjectType.Task)};
+
+if ( objectIdArray.length &gt; 0 )
+{
+var result = sforce.apex.execute(&quot;ortoo_qra/AssignmentController&quot;,
+&quot;takeOwnership&quot;, {userId: userId, objectIdArray: objectIdArray } );
+if( result == &apos;&apos; )
+{
+window.alert( &apos;Ownership taken successfully.&apos; );
+}
+else
+{
+window.alert( &apos;Failed to take ownership. Details: &apos; + result );
+}
+document.location.reload( true );
+}
+else
+{
+window.alert( &apos;Please select at least one record.&apos; );
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ortoo_qra__Take_Ownership_Detail</fullName>
+        <availability>online</availability>
+        <description>Q-assign: Gives ownership to the user pressing the button and updates Q-assign stats.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Take Ownership</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var userId = &quot;{!$User.Id}&quot;;
+var objectIdArray = [ &quot;{!Task.Id}&quot; ];
+
+if ( objectIdArray.length &gt; 0 )
+{
+var result = sforce.apex.execute(&quot;ortoo_qra/AssignmentController&quot;,
+&quot;takeOwnership&quot;, {userId: userId, objectIdArray: objectIdArray } );
+if( result == &apos;&apos; )
+{
+window.alert( &apos;Ownership taken successfully.&apos; );
+}
+else
+{
+window.alert( &apos;Failed to take ownership. Details: &apos; + result );
+}
+document.location.reload( true );
+}
+else
+{
+window.alert( &apos;Please select at least one record.&apos; );
+}</url>
+    </webLinks>
+</CustomObject>

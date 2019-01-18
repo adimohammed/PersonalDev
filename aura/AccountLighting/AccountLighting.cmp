@@ -1,0 +1,34 @@
+<aura:component controller="AccountContactController"  >
+    
+    <aura:attribute name="AccountName" type="String" />
+    <aura:attribute name="AccountType" type="String"/>
+    <aura:attribute name="ShippingStreet" type="String"/>
+    <aura:attribute name="ShippingCity" type="String"/>
+    <aura:attribute name="ShippingState" type="String"/>
+    <aura:attribute name="ShippingPostalCode" type="String"/>
+    <aura:attribute name="FirstName" type="String"/>
+    <aura:attribute name="LastName" type="String"/>
+    <aura:attribute name="PhoneNumber" type="String"/>
+    <aura:attribute name="MobileNumber" type="String"/>
+    <div class ="slds-grid">
+      <div class="slds-col">
+ 
+    <ui:inputText class="slds-input" value="{!v.AccountName}" label="Account Name"  />
+         
+    <ui:inputText class="slds-input" value="{!v.AccountType}" label="Account Type"  />
+         </div>
+        <div class="slds-col">
+    <ui:inputText class="slds-input" value="{!v.ShippingStreet}" label="Shipping Street"  />
+    <ui:inputText class="slds-input" value="{!v.ShippingCity}" label="Shipping City"  />
+             </div>
+    <ui:inputText class="slds-input" value="{!v.ShippingState}" label="Shipping State"  />
+    <ui:inputText class="slds-input" value="{!v.ShippingPostalCode}" label="Shipping PostalCode"  />
+    <ui:inputText class="slds-input" value="{!v.FirstName}" label="First Name"  />
+    <ui:inputText class="slds-input" value="{!v.LastName}" label="Last Name" />
+    <ui:inputText class="slds-input" value="{!v.PhoneNumber}" label="Phone Number"  />
+    <ui:inputText class="slds-input" value="{!v.MobileNumber}" label="Mobile Number" />
+   </div>
+ <ui:button aura:id="button" class="slds-button" label="Save" press="{!c.getBMIS}"/>
+
+	
+</aura:component>

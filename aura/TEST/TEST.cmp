@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Appointment" type="String" access="GLOBAL" default=" "/>
+     
+   <!-- <aura:handler name="change" value="{!v.id}" action="{!c.updateRecordView}"/>
+    <div aura:id="container">
+        <force:recordView recordID="{!v.id}" type="MINI"/>
+    </div>-->
+    <ui:outputText value="SA-0001"/>
+    <p><ui:outputText value="July 7 2018"/></p>
+   <p> <ui:outputText value="John Doe"/></p>
+   <p> <ui:button label="Save" /></p>
+
+</aura:component>

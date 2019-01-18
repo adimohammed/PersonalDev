@@ -1,0 +1,45 @@
+<apex:page controller="WrapperExampleController_Darren" tabstyle="Account">
+  
+  <apex:pageBlock title="Report">
+  <table class="list" border="0" cellpadding="0" cellspacing="0">
+    <tr class="headerRow  ">
+      <th>Photographer</th>
+      <th>Owner</th>
+      <apex:repeat value="{!headDates}" var="heading">
+        <th class="headerRow ">
+           {!heading}
+        </th>
+      </apex:repeat>
+    </tr>
+    <apex:repeat value="{!DataRows}" var="prow">
+        <apex:repeat value="{!prow.owners}" var="orow">
+        <tr>
+          <td>
+             {!prow.photographer}
+          </td>
+          <td>
+             {!orow.owner}
+          </td>
+          <apex:repeat value="{!orow.counts}" var="count">
+            <td>
+             {!count}
+            </td>
+          </apex:repeat>
+       </tr>
+       <tr>
+          <td>
+          </td>
+          <td>
+             Subtotal
+          </td>
+          <apex:repeat value="{!prow.subtotals}" var="subtotal">
+            <td>
+             {!subtotal}
+            </td>
+          </apex:repeat>
+       </tr>
+       </apex:repeat>
+    </apex:repeat>
+  </table>
+  </apex:pageBlock>
+</apex:page>

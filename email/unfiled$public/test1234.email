@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="EMAIL VF" recipientType="User" relatedToType="Account">
+<messaging:plainTextEmailBody >
+Congratulations!
+This is your new Visualforce Email Template.
+<apex:insert name="Adil"/>
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

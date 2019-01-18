@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>SFDC LEADS</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>InternationalLeads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Chicago</value>
+            </criteriaItems>
+            <template>unfiled$public/NewUserEmail</template>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>adiludm@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>adiludm@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>test</fullName>
+        <active>false</active>
+    </assignmentRule>
+</AssignmentRules>

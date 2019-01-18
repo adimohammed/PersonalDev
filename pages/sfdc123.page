@@ -1,0 +1,27 @@
+<apex:page standardController="Account"  renderas="pdf">
+<html>
+ <head>
+  <style> 
+     .test {
+     font-family: algerian;
+    font-weight:bold;
+    font-size:30px;
+    color:green}  
+  </style>
+  <style> 
+     .test1{
+     font-family: GEORGIA;
+    font-weight:bold;
+    font-size:15px;
+    color:RED}  
+  </style>
+ </head>
+  <center>
+  <h1>Announcing New Irshads Account</h1>
+     <apex:panelGrid columns="1" width="100%">
+     <apex:outputText value="{!account.Name}" styleClass="test" /> 
+        <apex:outputText value="{!NOW()}" styleClass="test1" ></apex:outputText>
+     </apex:panelGrid>
+  </center>
+</html>
+</apex:page>

@@ -1,0 +1,147 @@
+<apex:page standardController="Contact" sidebar="false" showHeader="false" extensions="ContactiCenteraIntegration" tabStyle="Contact">
+
+     <script type="text/javascript">    
+            
+            function getsearchbuttonid()
+            {
+                  var buttons = document.getElementsByTagName('input');
+                  for (var i = 0, len = buttons.length; i < len; ++i) 
+                    {
+                     if(buttons[i].value.toLowerCase() == "search")
+                        return buttons[i];
+                
+               
+                   }
+               return null;
+             }
+             
+            function noenter(e){               
+              
+                if(window.event)
+                {                    
+                    key = window.event.keyCode;     //IE               
+                } 
+                else{                    
+                    key = e.which;     //firefox               
+                } 
+                           
+                if(key == 13) {                    
+                   ele=getsearchbuttonid();
+                   if (ele!=null)
+                        ele.click();  
+                   return false;
+                                   
+                } else{                    
+                    return true;               
+                } 
+                         
+            }     
+         </script>  
+
+    <apex:actionStatus id="statusId" startText="Processing..."/>
+        
+    <apex:form id="formId"   >
+   
+        <b>Tip for the Page</b>     
+             <style>
+        .vfHelpText a            {position:relative;}
+        .vfHelpText a span       {display: none;}
+        .vfHelpText a:hover span {display: block;
+                                  position:absolute;
+                                  top:1.25em;
+                                  padding:2px 5px;
+                                  right:-15em; width:15em;
+                                  z-index:100;
+                                  border:1px solid orange;
+                                  background-color:#FEFDB9;
+                                  color:black;
+                                 }
+    </style>
+    
+    <span class="vfHelpText">
+        <apex:outputLink value="javascript:return false;">
+            <img src="/s.gif" alt="" class="helpOrb" />
+            <span>“You can find documents in SMART to send to clients here. If you send using Dynamic Email, it will be logged as a TRUST email activity. It also allows you to see when your contact downloads the item via SMART so you know when to follow up.”
+</span>
+        </apex:outputLink>
+    </span>
+        <apex:pageBlock id="pbId" >
+            <apex:pageBlockSection columns="1" >
+             
+           
+                <apex:pageBlockSectionItem >
+                    <apex:panelGrid columns="25"  > 
+                         <apex:inputText value="{!documentSearchString}" id="docStrId"  onkeypress="return noenter(event)" />&nbsp;&nbsp;
+                       <apex:commandButton value="Search" action="{!search}" rerender="formId"  status="statusId" id="theSearch0" >
+                         
+                            <apex:param name="serverURL" assignTo="{!apiServerURL}" value="{!$Api.Enterprise_Server_URL_80}" />
+                            <apex:param name="serverSession" assignTo="{!apiServerSession}" value="{!$Api.Session_ID}" />
+                        </apex:commandButton>
+                        <apex:commandButton value="Reset" action="{!reset}" rerender="formId"  status="statusId"/>
+                        <apex:commandButton value="Email" action="{!sendEmail}" rerender="formId"  status="statusId">
+                            <apex:param value="false" name="isDynamic" assignTo="{!isDynamic}"/>
+                        </apex:commandButton>
+                        <apex:commandButton value="Dynamic Email" action="{!sendEmail}" rerender="formId" status="statusId">
+                            <apex:param value="true" name="isDynamic" assignTo="{!isDynamic}"/>
+                        </apex:commandButton>
+                        
+                       <!-- <input type="button" class="btn" value="Customize Email Text"  onclick='window.open("/apex/ContactiCenteraIntegrationEmail?selectedTitle={!docIdString}", null,  "left=320,top=170,width=550,height=190");' title=""/>-->
+                       
+                 <apex:commandButton styleClass="btn" value="Customize Email Text" action="{!populateDocString}" oncomplete="window.open('/apex/ContactiCenteraIntegrationEmail?selectedTitle={!docIdString}', null,  'left=320,top=170,width=550,height=190');">
+                 
+               </apex:commandButton>
+                 </apex:panelGrid> 
+                 
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+             <apex:PageBlock id="results">
+              <b> Page - {!PageNum} </b>
+            <apex:pageMessages id="msg"/>
+            
+           
+            <apex:pageBlockTable value="{!documentList}" var="doc" id="docTableId" first="{!firstRecPosition}" rows="{!rowLimit}" rendered="{!NOT(ISNULL(documentList))}">
+                <apex:column >
+                
+                    <apex:inputCheckbox value="{!doc.isChecked}"/>
+                </apex:column>
+               
+                <apex:column >
+                   <apex:facet name="header">
+                        <apex:commandLink value="Title" action="{!doSort}" rerender="results"  status="statusId">
+                            <apex:param name="sortField" value="Title" assignTo="{!sortField}"/>
+                            
+                            
+                        </apex:commandLink>
+                        
+                    </apex:facet>
+                     <apex:outputLink target="{!doc.url}" value="{!doc.url}">{!doc.title}</apex:outputLink>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink value="FileType"  action="{!doSort}" rerender="results"  status="statusId">
+                            <apex:param name="sortField" value="FileType" assignTo="{!sortField}"/>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputLabel value="{!doc.FileType}"/> 
+                </apex:column>
+                      <apex:column >
+                    <apex:facet name="header">
+                        <apex:commandLink value="Modified Date"  action="{!doSort}" rerender="results"  status="statusId">
+                            <apex:param name="sortField" value="lastupdated" assignTo="{!sortField}"/>
+                        </apex:commandLink>
+                    </apex:facet>
+                    <apex:outputLabel value="{!doc.st}"/> 
+                </apex:column>
+              
+            
+          
+       </apex:pageBlockTable>
+         <apex:commandLink value="Previous" action="{!showPreviousRecs}" rendered="{!showPrevious}" rerender="formId" status="statusId"/> &nbsp;
+             
+            <apex:commandLink value="Next" action="{!showNextRecs}" rendered="{!showNext}" rerender="formId" status="statusId"/>
+            </apex:PageBlock>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

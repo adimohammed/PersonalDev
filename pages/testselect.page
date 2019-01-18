@@ -1,0 +1,34 @@
+<apex:page controller="opportunityStageController">
+  <apex:messages style="color:red"></apex:messages>
+ 
+   <apex:form >
+ 
+      <apex:pageblock title="Opportunity List">
+         
+            <apex:actionstatus id="stageStatus" starttext=" Opportunity Being Updated…" stoptext=" Update Complete!"></apex:actionstatus>
+ 
+           
+           <apex:pageblocktable value="{!oppList}" var="oppItem" id="oppTable">
+ 
+               <apex:column headervalue="Name">
+                    <apex:outputtext value="{!oppItem.Name}"></apex:outputtext>
+                </apex:column>
+ 
+                <apex:column headervalue="Stage Name">
+            <apex:selectlist value="{!oppItem.StageName}" multiselect="false" size="1">
+                                
+                <apex:selectoptions value="{!OppStages}"></apex:selectoptions>
+ 
+                              
+ 
+                <apex:actionsupport event="onchange" action="{!updateOpportunity}" rerender="oppTable" status="stageStatus">
+                    <apex:param name="opportunityID" assignto="{!opportunityID}" value="{!oppItem.id}"></apex:param>
+                </apex:actionsupport>
+            </apex:selectlist> 
+        </apex:column>
+ 
+          </apex:pageblocktable>
+      </apex:pageblock>
+ 
+  </apex:form>
+</apex:page>

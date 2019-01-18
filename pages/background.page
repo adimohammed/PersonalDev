@@ -1,0 +1,12 @@
+<apex:page >
+
+<html>
+<style type="text/css">
+
+background-color: #FFFFF0;
+
+</style>
+
+</html>
+<p> hi</p>
+</apex:page>

@@ -1,0 +1,51 @@
+<apex:page sidebar="false" showHeader="false" >
+<apex:form >
+
+<apex:pageblock >
+     <apex:pageBlockButtons location="top">
+    
+    <apex:commandButton onclick="pressme()" value="MAKE-UP WOMAN THE MOVIE "/>
+     <apex:commandButton value="KNOW MORE" action="https://www.facebook.com/tehniatj/photos"/>
+      <apex:commandButton value="THE ENEMY" action="https://www.facebook.com/neelima.devagiri?fref=ts"/>
+
+     </apex:pageBlockButtons>
+</apex:pageblock>
+<html>
+
+
+<font size="10" face="Verdana" color="DeepPink">
+<marquee direction = "left"> <h1><i> MAKE-UP WOMAN </i></h1></marquee>
+</font>
+<font size="10" face="Verdana" color="BLUE">
+<marquee direction = "RIGHT"> <h1><i> MAKE-UP WOMAN </i></h1></marquee>
+</font>
+<font size="10" face="Verdana" color="RED">
+<marquee direction = "left"> <h1><i> MAKE-UP WOMAN </i></h1></marquee>
+</font>
+<font size="10" face="Verdana" color="GREEN">
+<marquee direction = "RIGHT"> <h1><i> MAKE-UP WOMAN </i></h1></marquee>
+</font>
+</html>
+<script>
+
+
+ function pressme()
+ {
+   alert('THIS SUMMER ');
+     alert('A WOMAN SHALL RISE ');
+     alert('AGAINST ALL THE ODDS');
+     alert('FOR  THE HUMANITY');
+      alert('TO HELP THE WOMANKIND');
+      alert('MAKE-UP WOMAN');
+    alert('COMING SOON ');
+      alert('IN THEATRES NEAR  YOU');
+      alert('AVAILABLE IN 3D AND 4D');
+            
+     
+ }
+</script>
+
+
+</apex:form>
+  
+</apex:page>

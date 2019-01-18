@@ -1,0 +1,10 @@
+<apex:page standardController="Account">
+    <apex:form >
+       
+                <apex:inputField value="{!account.name}"/>
+                <apex:inputField value="{!account.site}"/>
+                <apex:inputField value="{!account.type}"/>
+                <apex:inputField value="{!account.accountNumber}"/>
+            
+    </apex:form>
+</apex:page>

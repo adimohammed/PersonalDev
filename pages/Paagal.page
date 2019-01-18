@@ -1,0 +1,42 @@
+<apex:page sidebar="false" showHeader="false" >
+  <apex:form >
+
+
+<apex:pageblock >
+     <apex:pageBlockButtons location="top">
+    
+    <apex:commandButton onclick="pressme()" value="Please Click Me"/>
+       <apex:commandButton value="FaceBook" action="https://www.facebook.com/adiludm"/>
+     </apex:pageBlockButtons>
+</apex:pageblock>
+<html>
+
+
+<font size="10" face="Verdana" color="Blue">
+<marquee direction = "left"> <h1><i> Thank you Every One at TEK Systems </i></h1></marquee>
+</font>
+
+</html>
+
+<script>
+
+
+ function pressme()
+ {
+   alert('Thank you Every One');
+     alert('This was the');
+     alert('Best Team Ever');
+     alert('I wish Every One');
+      alert('All the Very Best');
+       alert('You can add me');
+        alert('on FaceBook');
+        alert('Just Click');
+        alert('The FaceBook Button');
+         alert('ON THE HOME PAGE');
+          alert('C YA');
+            
+     
+ }
+</script>
+  </apex:form>
+</apex:page>

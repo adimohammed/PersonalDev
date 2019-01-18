@@ -1,0 +1,9 @@
+<apex:page standardController="Lead" >
+
+    <apex:form >
+        
+        <apex:inputField value="{!Lead.industry}"/> <p/>
+        
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>
+</apex:page>

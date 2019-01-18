@@ -1,0 +1,25 @@
+<apex:page standardcontroller="Application__c" extensions="tree" tabStyle="Grouping__c">
+<apex:form >
+<apex:pageBlock title=" For : {!application}">
+<apex:commandButton value="-" action="{!Collapse}"/>
+  <b> <apex:outputField style="font-weight:bold" value="{!Application__c.Application_ID__c}"/>------  <apex:outputField style="font-weight:bold" value="{!Application__c.Name}"/></b>
+              
+
+<ul class="tree" style="margin-top: -1ex;">
+<apex:repeat value="{!grouping}" var="group">
+<b><li  class="treeHeader"><a  href="https://na7.salesforce.com/{!group.id}">{!group.name}...</a></li></b>
+<apex:repeat value="{!group.categories}" var="cat">
+<b><ul class="closed"> <a href="https://na7.salesforce.com/{!cat.id}">{!cat.name}</a>
+<ul><apex:repeat value="{!cat.topics__r}" var="topic">
+<li><a href="https://na7.salesforce.com/{!topic.id}">{!topic.name}.......................Description:{!topic.Description__c}</a></li>
+
+</apex:repeat>
+</ul>
+</ul></b>
+</apex:repeat>
+
+</apex:repeat>
+</ul>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

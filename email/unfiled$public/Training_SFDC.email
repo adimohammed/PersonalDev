@@ -1,0 +1,3 @@
+Hi {!Contact.Name}
+
+You recent enquiry for case {!Case.CaseNumber} is following
